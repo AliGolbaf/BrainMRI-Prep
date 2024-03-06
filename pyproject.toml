@@ -1,0 +1,64 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "BrainMRI-Prep"
+version = "0.0.0"
+description = "Image Processing Pipeline"
+readme = "README.md"
+include-package-data = true
+requires-python = ">=3.9"
+license = "MIT"
+license-files = { paths = ["LICENSE"] }
+authors = [
+    { name = "Ali Golbaf" , email = "ali.golbaf@plymouth.ac.uk"} 
+]
+
+maintainers = [
+    { name = "Swen Gaudl", email = "swen.gaudl@plymouth.ac.uk" },
+    { name = "Emmanuel Ifeachor", email =  "e.ifeachor@plymouth.ac.uk" },
+    { name = "Oliver Hanemann", email =  "oliver.hanemann@plymouth.ac.uk" },
+    { name = "Ali Golbaf", email =  "ali.golbaf@plymouth.ac.uk" },
+]
+
+dependencies= [
+"Everything-Tkinter",
+"pickle4",
+"logo",
+"pandas",
+"pytest-shutil",
+"SimpleITK",
+"numpy",
+"SimpleITK-SimpleElastix",
+]
+
+[project.scripts]
+heudiconv_agpi = "brainmri_prep.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/AliGolbaf/BrainMRI-Prep"
+Issues   = "https://github.com/AliGolbaf/BrainMRI-Prep/issues"
+
+[tool.mypy]
+allow_incomplete_defs = false
+allow_untyped_defs = false
+ignore_missing_imports = false
+
+no_implicit_optional = true
+implicit_reexport = false
+local_partial_types = true
+pretty = true
+show_error_codes = true
+show_traceback = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["src"]
+
+
+
