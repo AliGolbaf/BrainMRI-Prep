@@ -1,6 +1,6 @@
 # BrainMRI-Prep
 
-![image](https://github.com/AliGolbaf/BrainMRI-Prep/assets/58196772/3868e73e-a674-41da-8adb-16ea583c06c8)
+![image](https://github.com/AliGolbaf/BrainMRI-Prep/assets/58196772/201adf5b-5ac2-4eed-afb2-d0e9dbb99900)
 
 ## Installation
 BrainMRI-Prep requires Python 3.9 or higher. Use ([pip](https://pip.pypa.io/en/stable/)):
