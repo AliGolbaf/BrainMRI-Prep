@@ -34,7 +34,7 @@ dependencies= [
 ]
 
 [project.scripts]
-heudiconv_agpi = "brainmri_prep.__main__:main"
+brainmri_prep = "brainmri_prep.__main__:main"
 
 [project.urls]
 Homepage = "https://github.com/AliGolbaf/BrainMRI-Prep"
